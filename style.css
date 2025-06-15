@@ -75,32 +75,39 @@ body,html{
 .red{
     background-color: red;
 }
-@media (max-width: 768px) {
+/* Mobile & tablet screens */
+@media screen and (max-width: 768px) {
   .calculator {
-    width: 90vw;
-    height: 85vh;
+    width: 90%;
+    height: auto;
     padding: 12px;
   }
 
   #input_screen {
     font-size: 2rem;
+    padding: 10px;
   }
 
   .buttons {
     height: 50px;
     font-size: 1.2rem;
   }
+
+  .allbutton {
+    gap: 10px;
+  }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .calculator {
-    width: 95vw;
-    height: 90vh;
-    padding: 10px;
+    width: 95%;
+    height: auto;
+    padding: 8px;
   }
 
   #input_screen {
     font-size: 1.6rem;
+    padding: 8px;
   }
 
   .buttons {
