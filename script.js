@@ -17,7 +17,7 @@ buttons.forEach(button => {
             try {
                 // Replace percentage
                 const parsedString = string.replace(/(\d+)%/g, "($1/100)");
-                const result = eval(parsedStrin);
+                const result = eval(parsedString);
                 string = result;
                 input.value = result;
             } catch (error) {
